@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Image from "next/image"
 
 const IntroCard = () => {
   return (
@@ -15,12 +15,9 @@ const IntroCard = () => {
 
           </div>
         </div>
-        {/* <Avatar>
-          <AvatarImage src="/profile_photo.jpg" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar> */}
+       
         <div className="overflow-hidden h-[180px] w-[180px] rounded-full relative">
-         <img src = "profile_photo.jpg" className="object-cover"/>
+         <Image src = "/1.png" height={100} width={100} alt="project" />
         </div>
      </div>
     </div>

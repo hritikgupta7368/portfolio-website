@@ -1,6 +1,7 @@
 "use client"
 import { useState ,useEffect} from "react";
 import "./globals.css"
+import Image from "next/image";
 
 const CardSlider = () => {
     const [repo , setRepo] = useState([])
@@ -39,7 +40,7 @@ const CardSlider = () => {
           <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
             {repo?.map((project, index) => (
               <div className="w-full relative" key={index} >
-                <img src = "1.png" />
+               <Image src = "/1.png" height = {100} width = {100} alt="projectimage" />
                 <div className="absolute text-white">
                     <p>{project?.name}</p>
                 </div>
