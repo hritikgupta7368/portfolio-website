@@ -17,7 +17,7 @@ const IntroCard = () => {
         </div>
        
         <div className="overflow-hidden h-[180px] w-[180px] rounded-full relative">
-         <Image src = "/1.png" height={100} width={100} alt="project" />
+         <Image src = "/profile_photo.jpg" height={180} width={180} alt="project" />
         </div>
      </div>
     </div>
