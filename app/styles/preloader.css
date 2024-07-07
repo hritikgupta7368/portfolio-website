@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: "CustomFont", sans-serif;
+}
+
+.top_text,
+.bottom_text {
+  font-size: 16.6444rem;
+  font-weight: 400;
+
+  letter-spacing: -6.67px;
+  font-style: italic;
+  opacity: 0;
+}
+.bottom_text {
+  margin-left: 30%;
+  line-height: 0.7;
+}
+.top_text {
+  line-height: 0.9;
+}
+@media screen and (max-width: 768px) {
+  .top_text,
+  .bottom_text {
+    font-size: 5.8125em;
+  }
+}
